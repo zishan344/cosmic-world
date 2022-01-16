@@ -31,7 +31,22 @@ body {
   top: 5px;
   box-shadow: 0px 2px 0 #a5075e;
 }
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 40px;
+  border-bottom: 2px solid #ff008e;
+  text-transform: uppercase;
+
+  display: inline-block;
+  padding: 50px 5px 10px 10px;
+}
+.heighlight {
+  color: #ff008e;
+}
 /* header css */
+
 header {
   background-image: url("./cosmic-world-resources/images/cloud.png");
   background-repeat: no-repeat;
@@ -58,7 +73,7 @@ nav {
   font-weight: 600;
   padding: 15px 10px;
 }
-
+/* header banner */
 .banner {
   height: calc(100vh-80px);
   display: grid;
@@ -82,4 +97,38 @@ nav {
 }
 .banner-right img {
   width: 100%;
+}
+
+/* feature styles */
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0px 30px 33px rgba(0, 0, 0, 0.2);
+}
+.card-icon {
+  background-color: #ff008e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 11px;
+  color: #fff;
+}
+.card h3 {
+  color: #ff008e;
+  font-size: 25px;
+}
+.card p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.card a {
+  text-decoration: none;
+  color: #ff008e;
 }
